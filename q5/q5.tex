@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Problema de Encontro entre Veículos}
+\author{}
+\date{}
+\maketitle
+
+\section*{Descrição do Problema}
+Dois veículos, um carro e um caminhão, saem respectivamente de cidades opostas pela mesma rodovia. O carro, de Ribeirão Preto em direção a Barretos, a uma velocidade constante de 90 km/h, e o caminhão, de Barretos em direção a Ribeirão Preto, a uma velocidade constante de 80 km/h. Quando eles se cruzarem no percurso, qual estará mais próximo da cidade de Ribeirão Preto?
+
+\begin{itemize}
+    \item Distância entre Ribeirão Preto e Barretos: 125 km.
+    \item Velocidade do carro: 90 km/h.
+    \item Velocidade do caminhão: 80 km/h.
+    \item O carro leva 5 minutos a mais para passar em cada um dos 3 pedágios, totalizando 15 minutos de atraso.
+\end{itemize}
+
+\section*{Passo 1: Ajustar a Velocidade do Carro}
+O carro perde 15 minutos (0,25 horas) devido aos pedágios. A velocidade média efetiva do carro pode ser ajustada da seguinte forma:
+
+\[
+v_{\text{carro}} = \frac{90 \text{ km}}{1 \text{ hora} + 0.25 \text{ horas}} = \frac{90}{1.25} = 72 \text{ km/h}
+\]
+
+Agora, a velocidade do carro, considerando os pedágios, é de 72 km/h.
+
+\section*{Passo 2: Calcular o Tempo até o Encontro}
+A velocidade relativa entre o carro e o caminhão é a soma de suas velocidades:
+
+\[
+v_{\text{relativa}} = 72 \text{ km/h} + 80 \text{ km/h} = 152 \text{ km/h}
+\]
+
+O tempo necessário para que os veículos se encontrem é:
+
+\[
+t = \frac{125 \text{ km}}{152 \text{ km/h}} \approx 0.822 \text{ horas} \approx 49.32 \text{ minutos}
+\]
+
+\section*{Passo 3: Determinar a Distância Percorrida até o Ponto de Encontro}
+- \textbf{Distância percorrida pelo carro}:
+
+\[
+d_{\text{carro}} = 72 \text{ km/h} \times 0.822 \text{ horas} \approx 59.78 \text{ km}
+\]
+
+- \textbf{Distância percorrida pelo caminhão}:
+
+\[
+d_{\text{caminhao}} = 80 \text{ km/h} \times 0.822 \text{ horas} \approx 65.76 \text{ km}
+\]
+
+\section*{Passo 4: Qual Veículo Estará Mais Próximo de Ribeirão Preto?}
+No momento em que eles se cruzam:
+- O carro percorreu 59.78 km a partir de Ribeirão Preto, então ele está a:
+
+\[
+ 59.78 \text{ km} 
+\]
+
+- O caminhão percorreu 65.76 km a partir de Barretos, então ele está a:
+
+\[
+125 \text{ km} - 65.76 \text{ km} \approx 59.24 \text{ km} \text{ de Ribeirão Preto}
+\]
+
+\section*{Conclusão}
+No momento em que eles se cruzarem, \textbf{o caminhão estará mais próximo de Ribeirão Preto}, a uma distância de aproximadamente \(59.24 km\), enquanto o carro estará a \(59.78 km\)
+
+\end{document}
